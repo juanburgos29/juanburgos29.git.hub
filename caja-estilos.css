@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+}
+
+.hero {
+  background-color: blueviolet;
+}
+
+.caja-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 900px;
+  height: 600px;
+  padding: 50px;
+  /*border: 2px solid #888888;
+  border-radius: 10px 0 10px 0;*/
+  box-shadow: inset 20px 20px 100px grey;
+}
+
+.caja {
+  position: absolute;
+  justify-content: center;
+  width: 20%;
+  height: 20%;
+  background-color: blueviolet;
+  border-radius: 5px;
+box-shadow: 5px 5px 12px #888888;
+  animation-name: movimiento;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  animation-direction: alternate;
+}
+
+@keyframes movimiento {
+  0% {
+    top: 35px;
+    left: 45px;
+    background: red;
+  }
+  25% {
+    top: 35px;
+    left: 425px;
+    background: blue;
+    transform: rotate(45deg);
+  }
+  50% {
+    top: 125px;
+    left: 425px;
+    background: yellow;
+    transform: rotate(90deg);
+  }
+  75% {
+    top: 125px;
+    left: 45px;
+    background: green;
+  }
+  100% {
+    top: 35px;
+    left: 45px;
+    background: red;
+  }
+}
+
+.texto {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 20vh;
+  text-shadow: #888888 2px 2px;
+  z-index: 1;
+}
+body{
+  background-color:  #665AD6 ;
+  background-image: url(fondo.jpg);
+}
+.caja-container {
+background-color:antiquewhite ;
+}
+.caja2 {
+  position: absolute;
+  justify-content: center;
+  width: 20%;
+  height: 20%;
+  /*background-color: blueviolet;*/
+  border-radius: 5px;
+  /*box-shadow: 5px 5px 12px #888888;*/
+  animation-name: movimiento;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  animation-direction: alternate-reverse;
+}
+@keyframes movimiento {
+  0% {
+    top: 35px;
+    left: 45px;
+    background: red;
+  }
+  25% {
+    top: 35px;
+    left: 425px;
+    background: blue;
+    transform: rotate(45deg);
+  }
+  50% {
+    top: 125px;
+    left: 425px;
+    background: yellow;
+    transform: rotate(90deg);
+  }
+  75% {
+    top: 125px;
+    left: 45px;
+    background: green;
+  }
+  100% {
+    top: 35px;
+    left: 45px;
+    background: red;
+  }
+}
+  
